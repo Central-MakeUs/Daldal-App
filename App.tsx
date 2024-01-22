@@ -6,7 +6,7 @@ import Home from './src/screens/Home';
 
 const Stack = createStackNavigator();
 
-function App(): React.JSX.Element {
+const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <NavigationContainer>
@@ -20,11 +20,12 @@ function App(): React.JSX.Element {
       </NavigationContainer>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
 });
+
 export default App;
