@@ -5,7 +5,7 @@ import WebView from 'react-native-webview';
 const Home = () => {
   return (
     <View style={styles.container}>
-      <WebView source={{uri: 'http://192.168.0.83:5173'}} />
+      <WebView source={{uri: 'http://localhost:5173'}} />
     </View>
   );
 };
