@@ -2,7 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import Home from './src/screens/Home';
+import Home from './screens/Home';
 
 const Stack = createStackNavigator();
 
