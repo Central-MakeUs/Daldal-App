@@ -1,5 +1,5 @@
 import {SafeAreaView, StyleSheet} from 'react-native';
-import Navigation from './navigators/Navigation';
+import Navigation from '@navigators/Navigation';
 
 const App = () => {
   return (
