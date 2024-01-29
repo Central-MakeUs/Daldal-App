@@ -1,8 +1,13 @@
 import {StyleSheet, View} from 'react-native';
 import WebView from 'react-native-webview';
 import {Alert, BackHandler} from 'react-native';
+import {useEffect, useRef, useState} from 'react';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+type navStateType = {
+  url: string;
+  canGoBack: boolean;
+};
+
 const close = () => {
   Alert.alert('정말 종료하시겠어요?', '앱을 종료하려면 확인을 눌러주세요.', [
     {
@@ -18,9 +23,42 @@ const close = () => {
 };
 
 const Home = () => {
+  const webViewRef = useRef<WebView>(null);
+  const [navState, setNavState] = useState<navStateType>({
+    url: '',
+    canGoBack: false,
+  });
+
+  useEffect(() => {
+    const handleBackButton = () => {
+      if (navState.canGoBack) {
+        //TODO 실배포 주소로 변경
+        if (navState.url === 'http://localhost:5173/') {
+          close();
+        } else {
+          webViewRef.current?.goBack();
+        }
+      } else {
+        close();
+      }
+      return true;
+    };
+
+    BackHandler.addEventListener('hardwareBackPress', handleBackButton);
+    return () => {
+      BackHandler.removeEventListener('hardwareBackPress', handleBackButton);
+    };
+  }, [navState.canGoBack]);
+
   return (
     <View style={styles.container}>
-      <WebView source={{uri: 'http://localhost:5173'}} />
+      <WebView
+        source={{uri: 'http://localhost:5173'}}
+        ref={webViewRef}
+        onNavigationStateChange={state => {
+          setNavState({url: state.url, canGoBack: state.canGoBack});
+        }}
+      />
     </View>
   );
 };
