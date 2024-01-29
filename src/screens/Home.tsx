@@ -4,14 +4,12 @@ import {BackHandler} from 'react-native';
 import {useEffect, useRef, useState} from 'react';
 
 type NavStateType = {
-  url: string;
   canGoBack: boolean;
 };
 
 const Home = () => {
   const webViewRef = useRef<WebView>(null);
   const [navState, setNavState] = useState<NavStateType>({
-    url: '',
     canGoBack: false,
   });
 
@@ -36,7 +34,7 @@ const Home = () => {
         source={{uri: 'http://localhost:5173'}}
         ref={webViewRef}
         onNavigationStateChange={state => {
-          setNavState({url: state.url, canGoBack: state.canGoBack});
+          setNavState({canGoBack: state.canGoBack});
         }}
       />
     </View>
