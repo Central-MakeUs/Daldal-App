@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <WebView
-        source={{uri: 'http://localhost:5173'}}
+        source={{uri: 'https://daldal-web.vercel.app/'}}
         ref={webViewRef}
         onNavigationStateChange={state => {
           setNavState({canGoBack: state.canGoBack});
