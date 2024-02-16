@@ -33,6 +33,12 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>달달쇼핑에 업로드할 구매 인증 사진 촬영을 위해 카메라 권한이 필요합니다. 촬영한 사진은 서버로 전송됩니다. 설정에서 해당 권한을 변경할 수 있습니다.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>달달쇼핑에 업로드할 구매 인증 비디오 촬영을 위해 마이크 권한이 필요합니다. 촬영한 비디오는 서버로 전송됩니다. 설정에서 해당 권한을 변경할 수 있습니다.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>달달쇼핑에 구매 인증 사진을 가져올 권한이 필요합니다. 선택한 사진은 서버로 전송됩니다. 설정에서 해당 권한을 변경할 수 있습니다.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
