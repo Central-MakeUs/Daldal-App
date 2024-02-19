@@ -36,6 +36,7 @@ const Home = () => {
         onNavigationStateChange={state => {
           setNavState({canGoBack: state.canGoBack});
         }}
+        scrollEnabled={false}
       />
     </View>
   );
