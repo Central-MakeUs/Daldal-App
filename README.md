@@ -1,81 +1,79 @@
 # Daldal-App
-달달쇼핑 앱 레파지토리입니다.
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+![Group 14088](https://github.com/Central-MakeUs/Daldal-Web/assets/83866983/c7858fab-376e-479c-b802-397e3d2a16fa)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 📰 풍성한 리뷰, 알뜰한 환급, '달달쇼핑'
 
-## Step 1: Start the Metro Server
+> CMC 14기 <b><머니메이커 팀></b> <br/>
+> 제작 기간 : 2024.01 ~ 2024.02
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+'달달쇼핑'은 제휴 마케팅의 기본 구조에서, 구매자에게도 혜택을 나눠줄 수 있는 혜택 제공형 쇼핑 서비스입니다.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 서비스 링크
 
-```bash
-# using npm
-npm start
+1. [앱 스토어 링크](https://apps.apple.com/kr/app/%EB%8B%AC%EB%8B%AC%EC%87%BC%ED%95%91/id6477835653)
+2. [구글 플레이 스토어 링크](https://play.google.com/store/apps/details?id=com.daldalShopping)
+3. [웹 서비스 링크](https://daldal-web.vercel.app/)
 
-# OR using Yarn
-yarn start
+## 시작 가이드
+
+```
+yarn
+yarn dev
 ```
 
-## Step 2: Start your Application
+## 기술 스택
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### 환경
 
-### For Android
+<div style='display: flex, gap: 5px'>
+    <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Github-181717?style=flat&logo=github&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white"/>
+</div>
 
-```bash
-# using npm
-npm run android
+### 개발
 
-# OR using Yarn
-yarn android
-```
+<div style='display: flex, gap: 5px'>
+    <img src="https://img.shields.io/badge/React Native-61DAFB?style=flat&logo=react&logoColor=black"/>
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"/>
+    <img src="https://img.shields.io/badge/React Native Webview-59666C?style=flat&logoColor=white"/>
+</div>
 
-### For iOS
+### 소통 및 관리
 
-```bash
-# using npm
-npm run ios
+   <div style='display: flex, gap: 5px'>
+<img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white"/>
+ <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white"/>
+  </div>
 
-# OR using Yarn
-yarn ios
-```
+## 화면 구성
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+![image](https://github.com/Central-MakeUs/Daldal-Web/assets/83866983/fc1069da-3493-422c-9ab9-64954bb7f70a)
+![image](https://github.com/Central-MakeUs/Daldal-Web/assets/83866983/bcaacfb4-ee06-49fb-a982-0be0c5cda252)
+![image](https://github.com/Central-MakeUs/Daldal-Web/assets/83866983/f0cbd16d-b97f-43f8-90ce-86a3a7d9c688)
+![image](https://github.com/Central-MakeUs/Daldal-Web/assets/83866983/89ffa692-9ad4-4153-a48b-dce300afb503)
+![image](https://github.com/Central-MakeUs/Daldal-Web/assets/83866983/7a327e76-b5c3-40eb-baa6-8a8392a01a33)
+![image](https://github.com/Central-MakeUs/Daldal-Web/assets/83866983/677f05dc-e532-48d8-b9b1-1bb54ae53454)
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## 주요 기능
 
-## Step 3: Modifying your App
+✨ [오직 달달쇼핑에서 누리는 포인트 적립]
 
-Now that you have successfully run the app, let's modify it.
+- 온라인에서 최저가 찾느라 힘드셨죠? 정보의 홍수 속에서 어떤게 더 저렴한지 시간 쓰실 필요 더 이상 없습니다! 달달쇼핑에서는 제휴된 쇼핑몰로 넘어가서 구입을 하게 되시면 구입액의 최소 3%를 환급해 드려요.
+- 최저가를 찾으려 몇시간씩 시간 소비하지 마세요! 달달쇼핑 유저들의 모든 시간은 소중하니까요.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+✨ [안전한 데이터 수취]
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- 스타트업에게 개인정보가 흘러갈 수 있어 걱정되신다고요? 걱정하지 마세요! 달달쇼핑에서는 그 어떠한 결제도 이루어지지 않으며, 카드 정보를 포함, 민감한 정보를 받지 않습니다.
+- 단지 포인트를 환급받을 계좌와 계좌주만 있으면, 구매 인증 후 포인트를 현금으로 환급해 드립니다.
 
-## Congratulations! :tada:
+✨ [접근권한 안내]
 
-You've successfully run and modified your React Native App. :partying_face:
+- 사진: 구매하신 제품의 구매내역을 캡쳐
 
-### Now what?
+✨ [만 14세 미만은 보호자(법정대리인)의 동의 없이 본 서비스의 이용이 불가합니다]
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+✨ [개인정보처리방침 및 이용약관은 달달쇼핑 내에서 확인 부탁드립니다]
